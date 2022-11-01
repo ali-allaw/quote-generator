@@ -1,0 +1,93 @@
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --Quote-Font-Size : 28px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #19181A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.attribution {
+    margin-top: 200px;
+    color: var(--Light-Cyan);
+    font-size: var(--Quote-Font-Size);
+    a {
+        text-decoration: none;
+        color: var(--Neon-Green);
+    }
+}
+
+.box {
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 15px 35px 95px;
+    border-radius: 6px;
+    .generate-icon {
+        position: absolute;
+        bottom: -35px;
+        background-color: var(--Neon-Green);
+        padding: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .title {
+        display: flex;
+        column-gap: 20px;
+        p {
+            color: var(--Neon-Green);
+        }
+    }
+    .body {
+        text-align: center;
+        line-height: 40px;
+        p {
+            margin: 0px;
+            color: var(--Light-Cyan);
+            font-size: var(--Quote-Font-Size);
+        }
+    }
+    .footer {
+        span {
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            height: .3px;
+            background-color: var(--Grayish-Blue);
+            display: inline-block;
+            bottom: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::after {
+                content: "''";
+                position: absolute;
+                font-size: 42px;
+                color: var(--Light-Cyan);
+                letter-spacing: 7px;
+                background-color:var(--Dark-Grayish-Blue);
+                border-radius: 50%;
+                bottom: -25px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
